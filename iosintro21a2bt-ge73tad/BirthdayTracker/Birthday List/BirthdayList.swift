@@ -55,11 +55,6 @@ struct BirthdayList: View {
         birthdays = [paul, lara, marko, jens, dominic, florian, dora]
     }
     
-    public func getThem() -> [Birthday] {
-        
-        return self.birthdays
-    }
-    
     /*
      Task 2.1:
      The list items should be clickable -> Show the details of a birthday
@@ -75,14 +70,10 @@ struct BirthdayList: View {
      Enable deleting birthdays
     */
     
-    
-    
     var body: some View {
         NavigationView {
-            List(Model.mock.birthdays) { birthday in
-                NavigationLink(destination: BirthdayDetailView(birthday: birthday)){
-                    BirthdayCell(birthday: birthday)
-                }
+            List(birthdays) { birthday in
+                BirthdayCell(birthday: birthday)
             }.navigationBarTitle(Text("Upcoming Birthdays"), displayMode: .large)
         }
     }
