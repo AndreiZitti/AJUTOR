@@ -1,0 +1,860 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D610A5D26FF97A0002C6DBD /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D610A5C26FF97A0002C6DBD /* Tests_iOS.swift */; };
+		5D610A5F26FF97A0002C6DBD /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D610A5E26FF97A0002C6DBD /* Tests_iOSLaunchTests.swift */; };
+		5D610A6926FF97A0002C6DBD /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D610A6826FF97A0002C6DBD /* Tests_macOS.swift */; };
+		5D610A6B26FF97A0002C6DBD /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D610A6A26FF97A0002C6DBD /* Tests_macOSLaunchTests.swift */; };
+		5D610A6C26FF97A0002C6DBD /* RMAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D610A4426FF979D002C6DBD /* RMAppApp.swift */; };
+		5D610A6D26FF97A0002C6DBD /* RMAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D610A4426FF979D002C6DBD /* RMAppApp.swift */; };
+		5D610A6E26FF97A0002C6DBD /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D610A4526FF979D002C6DBD /* MainView.swift */; };
+		5D610A7026FF97A0002C6DBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D610A4626FF97A0002C6DBD /* Assets.xcassets */; };
+		5D610A7126FF97A0002C6DBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D610A4626FF97A0002C6DBD /* Assets.xcassets */; };
+		5DD449C52700D66B00C3972A /* MovieSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD449C42700D66B00C3972A /* MovieSearchViewModel.swift */; };
+		5DEB3E0327008AE3000C7E0E /* MovieApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEB3E0227008AE3000C7E0E /* MovieApi.swift */; };
+		5DEB3E0527009A30000C7E0E /* SeenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEB3E0427009A30000C7E0E /* SeenView.swift */; };
+		5DEB3E0727009F2E000C7E0E /* WatchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEB3E0627009F2E000C7E0E /* WatchListView.swift */; };
+		5DEB3E092700A413000C7E0E /* SuggestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEB3E082700A413000C7E0E /* SuggestionsView.swift */; };
+		5DEB3E0B2700A572000C7E0E /* TotalTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEB3E0A2700A572000C7E0E /* TotalTimeView.swift */; };
+		5DEB3E132700B769000C7E0E /* ListSeenMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEB3E122700B769000C7E0E /* ListSeenMovies.swift */; };
+		5DEB3E192700C3CE000C7E0E /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEB3E182700C3CE000C7E0E /* BaseAPI.swift */; };
+		5DEB3E1C2700C491000C7E0E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 5DEB3E1B2700C491000C7E0E /* Alamofire */; };
+		5DEB3E1F2700C4BC000C7E0E /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 5DEB3E1E2700C4BC000C7E0E /* SwiftyJSON */; };
+		5DEB3E212700C5D2000C7E0E /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEB3E202700C5D2000C7E0E /* MovieService.swift */; };
+		5DEB3E232700C62B000C7E0E /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEB3E222700C62B000C7E0E /* Services.swift */; };
+		5DEB3E252700CB10000C7E0E /* MovieSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEB3E242700CB10000C7E0E /* MovieSearch.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5D610A5926FF97A0002C6DBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D610A3F26FF979D002C6DBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D610A4A26FF97A0002C6DBD;
+			remoteInfo = "RMApp (iOS)";
+		};
+		5D610A6526FF97A0002C6DBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D610A3F26FF979D002C6DBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D610A5026FF97A0002C6DBD;
+			remoteInfo = "RMApp (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5D610A4426FF979D002C6DBD /* RMAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMAppApp.swift; sourceTree = "<group>"; };
+		5D610A4526FF979D002C6DBD /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		5D610A4626FF97A0002C6DBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5D610A4B26FF97A0002C6DBD /* RMApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RMApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D610A5126FF97A0002C6DBD /* RMApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RMApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D610A5326FF97A0002C6DBD /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		5D610A5826FF97A0002C6DBD /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D610A5C26FF97A0002C6DBD /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		5D610A5E26FF97A0002C6DBD /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
+		5D610A6426FF97A0002C6DBD /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D610A6826FF97A0002C6DBD /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		5D610A6A26FF97A0002C6DBD /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		5DD449C42700D66B00C3972A /* MovieSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchViewModel.swift; sourceTree = "<group>"; };
+		5DEB3E0227008AE3000C7E0E /* MovieApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieApi.swift; sourceTree = "<group>"; };
+		5DEB3E0427009A30000C7E0E /* SeenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeenView.swift; sourceTree = "<group>"; };
+		5DEB3E0627009F2E000C7E0E /* WatchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListView.swift; sourceTree = "<group>"; };
+		5DEB3E082700A413000C7E0E /* SuggestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionsView.swift; sourceTree = "<group>"; };
+		5DEB3E0A2700A572000C7E0E /* TotalTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalTimeView.swift; sourceTree = "<group>"; };
+		5DEB3E122700B769000C7E0E /* ListSeenMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSeenMovies.swift; sourceTree = "<group>"; };
+		5DEB3E182700C3CE000C7E0E /* BaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
+		5DEB3E202700C5D2000C7E0E /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
+		5DEB3E222700C62B000C7E0E /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		5DEB3E242700CB10000C7E0E /* MovieSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearch.swift; sourceTree = "<group>"; };
+		5DEB3E262700D1C5000C7E0E /* RMApp--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "RMApp--iOS--Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D610A4826FF97A0002C6DBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DEB3E1F2700C4BC000C7E0E /* SwiftyJSON in Frameworks */,
+				5DEB3E1C2700C491000C7E0E /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D610A4E26FF97A0002C6DBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D610A5526FF97A0002C6DBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D610A6126FF97A0002C6DBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D610A3E26FF979D002C6DBD = {
+			isa = PBXGroup;
+			children = (
+				5DEB3E262700D1C5000C7E0E /* RMApp--iOS--Info.plist */,
+				5D610A4326FF979D002C6DBD /* Shared */,
+				5D610A5226FF97A0002C6DBD /* macOS */,
+				5D610A5B26FF97A0002C6DBD /* Tests iOS */,
+				5D610A6726FF97A0002C6DBD /* Tests macOS */,
+				5D610A4C26FF97A0002C6DBD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5D610A4326FF979D002C6DBD /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				5DEB3E102700AC74000C7E0E /* ViewModels */,
+				5DEB3E0F2700AC52000C7E0E /* API */,
+				5DEB3E0C2700A9FA000C7E0E /* UI */,
+				5DEB3E0127008AB7000C7E0E /* Services */,
+				5DEB3E00270089E3000C7E0E /* Models */,
+				5D610A4426FF979D002C6DBD /* RMAppApp.swift */,
+				5D610A4626FF97A0002C6DBD /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		5D610A4C26FF97A0002C6DBD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D610A4B26FF97A0002C6DBD /* RMApp.app */,
+				5D610A5126FF97A0002C6DBD /* RMApp.app */,
+				5D610A5826FF97A0002C6DBD /* Tests iOS.xctest */,
+				5D610A6426FF97A0002C6DBD /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5D610A5226FF97A0002C6DBD /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				5D610A5326FF97A0002C6DBD /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		5D610A5B26FF97A0002C6DBD /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5D610A5C26FF97A0002C6DBD /* Tests_iOS.swift */,
+				5D610A5E26FF97A0002C6DBD /* Tests_iOSLaunchTests.swift */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		5D610A6726FF97A0002C6DBD /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				5D610A6826FF97A0002C6DBD /* Tests_macOS.swift */,
+				5D610A6A26FF97A0002C6DBD /* Tests_macOSLaunchTests.swift */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		5DEB3E00270089E3000C7E0E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5DEB3E242700CB10000C7E0E /* MovieSearch.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5DEB3E0127008AB7000C7E0E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5DEB3E202700C5D2000C7E0E /* MovieService.swift */,
+				5DEB3E222700C62B000C7E0E /* Services.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5DEB3E0C2700A9FA000C7E0E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5DEB3E112700AE3B000C7E0E /* Seen */,
+				5DEB3E0627009F2E000C7E0E /* WatchListView.swift */,
+				5DEB3E082700A413000C7E0E /* SuggestionsView.swift */,
+				5D610A4526FF979D002C6DBD /* MainView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		5DEB3E0F2700AC52000C7E0E /* API */ = {
+			isa = PBXGroup;
+			children = (
+				5DEB3E0227008AE3000C7E0E /* MovieApi.swift */,
+				5DEB3E182700C3CE000C7E0E /* BaseAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		5DEB3E102700AC74000C7E0E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5DD449C42700D66B00C3972A /* MovieSearchViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		5DEB3E112700AE3B000C7E0E /* Seen */ = {
+			isa = PBXGroup;
+			children = (
+				5DEB3E0427009A30000C7E0E /* SeenView.swift */,
+				5DEB3E0A2700A572000C7E0E /* TotalTimeView.swift */,
+				5DEB3E122700B769000C7E0E /* ListSeenMovies.swift */,
+			);
+			path = Seen;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5D610A4A26FF97A0002C6DBD /* RMApp (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D610A7426FF97A0002C6DBD /* Build configuration list for PBXNativeTarget "RMApp (iOS)" */;
+			buildPhases = (
+				5D610A4726FF97A0002C6DBD /* Sources */,
+				5D610A4826FF97A0002C6DBD /* Frameworks */,
+				5D610A4926FF97A0002C6DBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RMApp (iOS)";
+			packageProductDependencies = (
+				5DEB3E1B2700C491000C7E0E /* Alamofire */,
+				5DEB3E1E2700C4BC000C7E0E /* SwiftyJSON */,
+			);
+			productName = "RMApp (iOS)";
+			productReference = 5D610A4B26FF97A0002C6DBD /* RMApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5D610A5026FF97A0002C6DBD /* RMApp (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D610A7726FF97A0002C6DBD /* Build configuration list for PBXNativeTarget "RMApp (macOS)" */;
+			buildPhases = (
+				5D610A4D26FF97A0002C6DBD /* Sources */,
+				5D610A4E26FF97A0002C6DBD /* Frameworks */,
+				5D610A4F26FF97A0002C6DBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RMApp (macOS)";
+			productName = "RMApp (macOS)";
+			productReference = 5D610A5126FF97A0002C6DBD /* RMApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5D610A5726FF97A0002C6DBD /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D610A7A26FF97A0002C6DBD /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				5D610A5426FF97A0002C6DBD /* Sources */,
+				5D610A5526FF97A0002C6DBD /* Frameworks */,
+				5D610A5626FF97A0002C6DBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D610A5A26FF97A0002C6DBD /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = 5D610A5826FF97A0002C6DBD /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		5D610A6326FF97A0002C6DBD /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D610A7D26FF97A0002C6DBD /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				5D610A6026FF97A0002C6DBD /* Sources */,
+				5D610A6126FF97A0002C6DBD /* Frameworks */,
+				5D610A6226FF97A0002C6DBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D610A6626FF97A0002C6DBD /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = 5D610A6426FF97A0002C6DBD /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5D610A3F26FF979D002C6DBD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					5D610A4A26FF97A0002C6DBD = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					5D610A5026FF97A0002C6DBD = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					5D610A5726FF97A0002C6DBD = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 5D610A4A26FF97A0002C6DBD;
+					};
+					5D610A6326FF97A0002C6DBD = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 5D610A5026FF97A0002C6DBD;
+					};
+				};
+			};
+			buildConfigurationList = 5D610A4226FF979D002C6DBD /* Build configuration list for PBXProject "RMApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5D610A3E26FF979D002C6DBD;
+			packageReferences = (
+				5DEB3E1A2700C491000C7E0E /* XCRemoteSwiftPackageReference "Alamofire" */,
+				5DEB3E1D2700C4BC000C7E0E /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
+			productRefGroup = 5D610A4C26FF97A0002C6DBD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D610A4A26FF97A0002C6DBD /* RMApp (iOS) */,
+				5D610A5026FF97A0002C6DBD /* RMApp (macOS) */,
+				5D610A5726FF97A0002C6DBD /* Tests iOS */,
+				5D610A6326FF97A0002C6DBD /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5D610A4926FF97A0002C6DBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D610A7026FF97A0002C6DBD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D610A4F26FF97A0002C6DBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D610A7126FF97A0002C6DBD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D610A5626FF97A0002C6DBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D610A6226FF97A0002C6DBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D610A4726FF97A0002C6DBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DEB3E232700C62B000C7E0E /* Services.swift in Sources */,
+				5DEB3E092700A413000C7E0E /* SuggestionsView.swift in Sources */,
+				5DEB3E252700CB10000C7E0E /* MovieSearch.swift in Sources */,
+				5DD449C52700D66B00C3972A /* MovieSearchViewModel.swift in Sources */,
+				5DEB3E132700B769000C7E0E /* ListSeenMovies.swift in Sources */,
+				5DEB3E0727009F2E000C7E0E /* WatchListView.swift in Sources */,
+				5D610A6E26FF97A0002C6DBD /* MainView.swift in Sources */,
+				5DEB3E212700C5D2000C7E0E /* MovieService.swift in Sources */,
+				5DEB3E0B2700A572000C7E0E /* TotalTimeView.swift in Sources */,
+				5DEB3E192700C3CE000C7E0E /* BaseAPI.swift in Sources */,
+				5DEB3E0327008AE3000C7E0E /* MovieApi.swift in Sources */,
+				5DEB3E0527009A30000C7E0E /* SeenView.swift in Sources */,
+				5D610A6C26FF97A0002C6DBD /* RMAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D610A4D26FF97A0002C6DBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D610A6D26FF97A0002C6DBD /* RMAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D610A5426FF97A0002C6DBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D610A5F26FF97A0002C6DBD /* Tests_iOSLaunchTests.swift in Sources */,
+				5D610A5D26FF97A0002C6DBD /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D610A6026FF97A0002C6DBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D610A6B26FF97A0002C6DBD /* Tests_macOSLaunchTests.swift in Sources */,
+				5D610A6926FF97A0002C6DBD /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5D610A5A26FF97A0002C6DBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D610A4A26FF97A0002C6DBD /* RMApp (iOS) */;
+			targetProxy = 5D610A5926FF97A0002C6DBD /* PBXContainerItemProxy */;
+		};
+		5D610A6626FF97A0002C6DBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D610A5026FF97A0002C6DBD /* RMApp (macOS) */;
+			targetProxy = 5D610A6526FF97A0002C6DBD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5D610A7226FF97A0002C6DBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5D610A7326FF97A0002C6DBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		5D610A7526FF97A0002C6DBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "RMApp--iOS--Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zitti.RMApp;
+				PRODUCT_NAME = RMApp;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5D610A7626FF97A0002C6DBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "RMApp--iOS--Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zitti.RMApp;
+				PRODUCT_NAME = RMApp;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5D610A7826FF97A0002C6DBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zitti.RMApp;
+				PRODUCT_NAME = RMApp;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5D610A7926FF97A0002C6DBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zitti.RMApp;
+				PRODUCT_NAME = RMApp;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5D610A7B26FF97A0002C6DBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zitti.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "RMApp (iOS)";
+			};
+			name = Debug;
+		};
+		5D610A7C26FF97A0002C6DBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zitti.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "RMApp (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5D610A7E26FF97A0002C6DBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zitti.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "RMApp (macOS)";
+			};
+			name = Debug;
+		};
+		5D610A7F26FF97A0002C6DBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zitti.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "RMApp (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D610A4226FF979D002C6DBD /* Build configuration list for PBXProject "RMApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D610A7226FF97A0002C6DBD /* Debug */,
+				5D610A7326FF97A0002C6DBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D610A7426FF97A0002C6DBD /* Build configuration list for PBXNativeTarget "RMApp (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D610A7526FF97A0002C6DBD /* Debug */,
+				5D610A7626FF97A0002C6DBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D610A7726FF97A0002C6DBD /* Build configuration list for PBXNativeTarget "RMApp (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D610A7826FF97A0002C6DBD /* Debug */,
+				5D610A7926FF97A0002C6DBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D610A7A26FF97A0002C6DBD /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D610A7B26FF97A0002C6DBD /* Debug */,
+				5D610A7C26FF97A0002C6DBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D610A7D26FF97A0002C6DBD /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D610A7E26FF97A0002C6DBD /* Debug */,
+				5D610A7F26FF97A0002C6DBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5DEB3E1A2700C491000C7E0E /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		5DEB3E1D2700C4BC000C7E0E /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5DEB3E1B2700C491000C7E0E /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5DEB3E1A2700C491000C7E0E /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		5DEB3E1E2700C4BC000C7E0E /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5DEB3E1D2700C4BC000C7E0E /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 5D610A3F26FF979D002C6DBD /* Project object */;
+}
